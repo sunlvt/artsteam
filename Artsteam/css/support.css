@@ -1,0 +1,30 @@
+.questions {
+    padding: 20px;
+    background-color: thistle;
+    border-radius: 5px;
+}
+
+.questions .quest {
+    display: block;
+    padding: 20px;
+    background-color: rgb(214, 163, 214);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    color: rgb(60, 121, 233);
+}
+
+.questions a {
+    color: rgb(60, 121, 233);
+}
+
+.questions a:hover {
+    color: white;
+}
+
+.detail {
+    color: black;
+    display: none;
+    margin-top: 20px;
+    font-size: 15px;
+}

@@ -1,0 +1,163 @@
+@keyframes flow_in_left {
+    from {
+        left: -500px;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes flow_in_right {
+    from {
+        right: -500px;
+    }
+    to {
+        filter: opacity(1);
+    }
+}
+
+@media screen and (min-width: 1341px) {
+    .more {
+        display: none;
+    }
+    .in_more {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .more {
+        display: block;
+    }
+    .in_more {
+        display: none;
+    }
+}
+
+#bar {
+    position: fixed;
+    width: 100%;
+    min-width: 1280px;
+    height: 66px;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.75);
+    z-index: 2900;
+    transform: translateX(0);
+}
+
+#bar * {
+    z-index: 2901;
+}
+
+#bar>* {
+    position: absolute;
+}
+
+#bar #logo {
+    height: inherit;
+    width: auto;
+    padding-left: 100px;
+}
+
+#bar #logo :active {
+    background-color: lavender;
+}
+
+#bar .float_frame {
+    left: 331px;
+}
+
+#bar .float_frame>* {
+    position: relative;
+    float: left;
+    color: #ccc;
+    font-size: 14px;
+    height: 66px;
+    text-align: center;
+    line-height: 66px;
+    padding: 0 15px;
+    margin: 0 !important;
+    transition: 0.2s;
+}
+
+#bar .float_frame p {
+    margin: 0;
+    display: inline-block;
+}
+
+#bar .float_frame>a:hover,
+#bar .float_frame p:hover {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #fff;
+}
+
+#bar .log_in {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 66px;
+    height: 66px;
+    right: 220px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+#bar .log_in:hover {
+    opacity: 1;
+}
+
+#bar .log_in img {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-left: 14px;
+    transform: translateY(9px);
+}
+
+#bar .download {
+    width: 196px;
+    height: 70px;
+    top: -4px;
+    right: 0;
+    cursor: pointer;
+    background-image: url(https://drive.google.com/uc?export=view&id=12TRcflaXhysOxfG2asLg3FKz6Saht6gf);
+    background-size: auto;
+}
+
+#bar #logo,
+#bar .float_frame {
+    opacity: 0;
+    animation-name: flow_in_left;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#bar #logo {
+    animation-delay: 0.5s;
+    animation-duration: 0.8s;
+}
+
+#bar .float_frame {
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+}
+
+#bar .download,
+#bar .log_in {
+    filter: opacity(0);
+    animation-name: flow_in_right;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#bar .download {
+    animation-delay: 0.5s;
+    animation-duration: 0.8s;
+}
+
+#bar .log_in {
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+}

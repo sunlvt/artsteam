@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ARTSTEAMS</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/report.css" />
+</head>
+
+<body>
+    <main>
+        <div id="loading"></div>
+        <div class="page-container">
+            <h1 class="pb-4">Hỗ trợ</h1>
+
+            <div id="report-form-div">
+                <form id="reportForm">
+                    <h3 class="pb-2">Miêu tả vấn đề bạn gặp phải <span class="text-danger">*</span></h3>
+                    <span class="text-danger" id="title-error-span"></span>
+                    <input type="text" id="title" class="form-control w-100 mb-4" required/>
+                    <h3 class="pb-2">Hình ảnh (nếu có)</h3>
+                    <input type="file" id="image" accept="image/*" class="mb-4">
+                    <h3 class="pb-2">Chi tiết<span class="text-danger">*</span></h3>
+                    <span class="text-danger" id="detail-error-span"></span>
+                    <textarea rows="15" id="detail" class="form-control w-100 no-resize mb-4"></textarea>
+
+                    <div class="footer">
+                        <button type="submit" id="reportSubmit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div id="report-success-div" style="display: none;">
+                <p>Chúng tôi sẽ trả lời bạn sớm nhất có thể. Chúc bạn có một ngày tốt lành.</p>
+                <base target="nd" />
+                <a href="TrangChu.html">Trở về Trang chủ </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/report.js"></script>
+</body>
+
+</html>

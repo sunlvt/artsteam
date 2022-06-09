@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ARTSTEAMS</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/login-register.css" />
+</head>
+
+<body>
+
+    <main>
+        <div id="loading"></div>
+        <div class="page-container d-flex">
+            <div class="playground-panel">
+                <h1>ArtSteam</h1>
+                <h3>Make your profile become more Beautiful</h3>
+            </div>
+            <div class="login-panel">
+                <h2>Đăng Ký Tài Khoản</h2>
+                <form action="register.html" method="post" id="register-form">
+
+                    <input type="text" class="form-control w-100 mb-2" id="email" placeholder="Email" />
+                    <span class="text-danger" id="email-error-span"></span>
+
+                    <div class="d-flex button-group mt-2 mb-2">
+                        <input type="text" class="form-control w-100" placeholder="Mã Xác Nhận" />
+                        <button type="button" class="send-code">Nhận mã xác nhận</button>
+                    </div>
+
+                    <input id="password" type="password" autocomplete="new-password" class="form-control w-100 mb-2 mt-2" placeholder="Mật khẩu phải từ 8-30 ký tự (không thể toàn là chữ)" />
+                    <span class="text-danger" id="password-error-span"></span>
+
+                    <input id="password-confirm" type="password" autocomplete="confirm-password" class="form-control w-100 mb-2 mt-2" placeholder="Xác Nhận Mật Khẩu" />
+                    <span class="text-danger" id="password-confirm-error-span"></span>
+
+                    <button type="button" id="register-button" class="mb-2 mt-2">Đăng Ký</button>
+
+                    <div class="d-flex justify-content-center">
+                        <a href="login.html">Quay Lại Đăng Nhập ></a>
+                    </div>
+                </form>
+                <div id="dangky-thanhcong">
+                    <p>Đăng Ký thành công ^^</p>
+                    <a href="TrangChu.html"> Quay lại Trang chủ</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ARTSTEAMS</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/login-register.css" />
+</head>
+
+<body>
+    <main>
+        <div id="loading"></div>
+        <div class="page-container d-flex">
+            <div class="playground-panel">
+                <h1>ArtSteam</h1>
+                <h3>Make your profile become more Beautiful</h3>
+            </div>
+            <div class="login-panel">
+                <h2>Đăng Nhập Tài Khoản</h2>
+                <form action="login.html" method="post" id="login-form">
+
+                    <input type="text" class="form-control w-100 mb-2" id="username" placeholder="Tên người dùng / Email" />
+                    <span class="text-danger" id="username-error-span"></span>
+
+                    <input type="password" autocomplete="current-password" id="password" class="form-control w-100 mt-2 mb-2" placeholder="Mật khẩu" />
+                    <span class="text-danger" id="password-error-span"></span>
+
+                    <button type="submit" id="login-button" class="mb-4 mt-2">Đăng Nhập</button>
+
+                    <div class="d-flex justify-content-between">
+                        <a href="support.html">Gặp Khó Khăn</a>
+                        <a href="register.html">Đăng Ký Ngay</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

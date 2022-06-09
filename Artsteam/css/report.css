@@ -1,0 +1,22 @@
+.footer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer button {
+    width: 128px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    background-color: royalblue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#report-success-div {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}

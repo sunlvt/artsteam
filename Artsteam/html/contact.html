@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ARTSTEAMS</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+</head>
+
+<body>
+    <main>
+        <div id="loading"></div>
+        <div class="page-container d-flex">
+            <div class="link-list">
+                <h1 class="pb-4">Link liên hệ</h1>
+                <div class="d-flex align-items-center pb-2">
+                    <div class="d-flex justify-content-between align-items-center link-info">
+                        <span>FB</span>
+                        <img src="https://drive.google.com/uc?export=view&id=1gPm7wmXpxztKelPNn955g8qP--L9vcHl" alt="" class="icon-img">
+
+                    </div> :
+                    <a class="contact-link" href="https://www.facebook.com/vietthang.le.54922">ArtSteam offical</a>
+                </div>
+
+                <div class="d-flex align-items-center pb-2">
+                    <div class="d-flex justify-content-between align-items-center link-info">
+                        <span>Zalo</span>
+                        <img src="https://drive.google.com/uc?export=view&id=1EDcikHaAS9V06wX525doYjxHn2OhFxBq" alt="" class="icon-img">
+                    </div> :
+                    <a class="contact-link" href="https://chat.zalo.me/">0389501405</a>
+                </div>
+
+                <div class="d-flex align-items-center pb-2">
+                    <div class="d-flex justify-content-between align-items-center link-info">
+                        <span>Gmail</span>
+                        <img src="https://drive.google.com/uc?export=view&id=1Ip08sTtLRaax3ntZ-HU7WvC20xS_xFcI" alt="" class="icon-img">
+                    </div> :
+                    <a class="contact-link" href="https://mail.google.com/mail/">ArtSteam@gmail.com</a>
+                </div>
+            </div>
+
+
+            <div class="contact-card">
+                <h1 class="pb-4">Yêu Cầu Artwork</h1>
+                <div id="contact-card">
+                    <div class="contact-card-body">
+                        <div class="d-flex align-items-center pb-2">
+                            <div class="label">Tên:<span class="text-danger">*</span>
+                                <span class="text-danger" id="name-error-span"></span></div>
+                            <input type="text" id="name" class="form-control" />
+                        </div>
+                        <div class="d-flex align-items-center pb-2">
+                            <div class="label">Email:<span class="text-danger">*</span>
+                                <span class="text-danger" id="email-error-span"></span></div>
+                            <input type="email" id="email" class="form-control" />
+                        </div>
+                        <div class="d-flex align-items-center pb-2">
+                            <div class="label">SDT:<span class="text-danger">*</span>
+                                <span class="text-danger" id="sdt-error-span"></span></div>
+                            <input type="tel" id="sdt" pattern="[0-9]{10}" class="form-control" />
+
+                        </div>
+                        <div class="pb-2">Link</div>
+                        <div class="d-flex align-items-center pb-2">
+                            <div class="label">+ Facebook:<span class="text-danger">*</span></div>
+                            <input type="text" id="fb" class="form-control" />
+                        </div>
+                        <div class="d-flex align-items-center pb-2">
+                            <div class="label">+ Zalo:<span class="text-danger">*</span>
+                                <span class="text-danger" id="zalo-error-span"></span></div>
+                            <input type="tel" id="zalo" pattern="[0-9]{10}" class="form-control" />
+                        </div>
+                        <span class="text-danger" id="contact-error-span"></span>
+                        <div class="pb-2">Chi tiết</div>
+                        <textarea rows="10" id="detail" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div id="submitsuccess" style="display: none;">
+                    <p id="namesuc"></p>
+                    <p id="emailsuc"></p>
+                    <p id="sdtsuc"></p>
+                    <p id="fbsuc"></p>
+                    <p id="zalosuc"></p>
+                    <p id="detailsuc"></p>
+                    <p>Chúng tôi sẽ sớm liên lạc. Chúc bạn một ngày tốt lành</p>
+                </div>
+                <div class="contact-card-footer">
+                    <button id="submit-Yeucau">Yêu cầu</button>
+                </div>
+            </div>
+        </div>
+        <script src="../js/contact.js"></script>
+    </main>
+</body>
+
+</html>

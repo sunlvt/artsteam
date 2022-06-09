@@ -1,0 +1,92 @@
+@keyframes flow_in_bottom {
+    from {
+        top: 500px;
+    }
+    to {
+        filter: opacity(1);
+    }
+}
+
+@keyframes flow_in_right {
+    from {
+        right: -500px;
+    }
+    to {
+        filter: opacity(1);
+    }
+}
+
+#qin {
+    left: -400px;
+}
+
+#xiao {
+    top: 433px;
+    left: -400px;
+}
+
+#xiao,
+#qin {
+    position: absolute;
+    height: 431px;
+    filter: opacity(0);
+    animation-name: flow_in_right;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    animation-duration: 0.8s;
+}
+
+.title {
+    filter: opacity(0);
+    animation-name: flow_in_bottom;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    animation-duration: 0.8s;
+}
+
+.title {
+    position: absolute;
+    overflow: hidden;
+    top: 17%;
+    right: 100px;
+    text-align: right;
+    width: 30%;
+}
+
+.title p {
+    color: #fff;
+    width: 80%;
+    text-align: right;
+    text-shadow: 0 0 10px rgb(114 71 21 / 68%), 0 0 10px rgb(114 71 21 / 68%);
+    margin: 32px 0 27px 0;
+    font-size: 70px;
+    white-space: nowrap;
+}
+
+.dau {
+    width: 356px;
+    height: 76px;
+    margin: auto;
+}
+
+.XemRV {
+    width: 356px;
+    height: 76px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    vertical-align: middle;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.XemRV a {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #ccc;
+}
+
+.XemRV a:hover {
+    color: #fff;
+}

@@ -1,0 +1,118 @@
+.page-container {
+    height: calc(100vh - 66px);
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs .tab {
+    flex: 1 1 20%;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: rgba(202, 177, 202, 0.7);
+    border-right: 1px solid gray;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.tabs .tab.active {
+    background-color: thistle;
+    cursor: default;
+}
+
+.preview-panel {
+    height: calc(100vh - 66px - 58px - 200px);
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.preview-img {
+    height: 100%;
+}
+
+.arrow {
+    top: 40%;
+    position: absolute;
+    border: solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.right {
+    right: 20%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    left: 20%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.preview-panel .right-caret {
+    position: absolute;
+    right: 20px;
+}
+
+.preview-list {
+    height: 200px;
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(40%);
+}
+
+.target-panel {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    padding-left: 40%;
+    padding-right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.target-panel .target-container {
+    padding: 5px 12px;
+    height: 100%;
+    width: 100%;
+}
+
+.target-panel .target-container .target {
+    border: 3px solid grey;
+    height: 100%;
+}
+
+.preview-list .preview-item {
+    flex: 1 1 20%;
+    max-width: 20%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    ;
+}
+
+.preview-list .preview-item img {
+    width: 100%;
+    aspect-ratio: 1.5;
+}
+
+.item-img {
+    cursor: pointer;
+}
